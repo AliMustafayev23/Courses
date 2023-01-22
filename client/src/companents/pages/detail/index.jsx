@@ -1,15 +1,20 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./index.scss";
 const Detail = () => {
   let { _id } = useParams();
   const [course, setCourse] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     axios(`http://localhost:8000/courses/${_id}`).then((response) => {
       setCourse(response.data);
     });
   }, []);
+  const delet = () => {
+    axios.delete(`http://localhost:8000/courses/${_id}`);
+    navigate("/");
+  };
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -28,6 +33,9 @@ const Detail = () => {
         <img src={course.star} alt="" className="star" />
         <p>Rating:{course.rating} based on 120</p>
         <p>Price:${course.price}</p>
+        <button className="delet" onClick={() => delet()}>
+          Delete
+        </button>
       </div>
     </div>
   );

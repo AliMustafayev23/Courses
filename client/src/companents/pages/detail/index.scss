@@ -17,5 +17,22 @@
       height: 20px;
       width: 100px;
     }
+    .delet {
+      padding: 10px;
+      background-color: red;
+      color: white;
+      height: 50px;
+      width: 100px;
+      border-radius: 10px;
+      border-style: none;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #cb6464;
+      -webkit-transition: ease-out 1s;
+      -moz-transition: ease-out 1s;
+      transition: ease-out 1s;
+      &:hover {
+        box-shadow: inset 400px 0 0 0 #cb6464;
+      }
+    }
   }
 }

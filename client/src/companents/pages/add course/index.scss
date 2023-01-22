@@ -1,0 +1,52 @@
+.addCourse {
+  background-image: linear-gradient(to top, #6774ff, #8471ff, #a76dff, #d16eff);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    row-gap: 40px;
+    margin-bottom: 10vh;
+    .add {
+      padding: 10px;
+      background-color: rgb(83, 83, 206);
+      color: white;
+      height: 50px;
+      width: 100px;
+      border-radius: 10px;
+      border-style: none;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #ae59ff;
+      -webkit-transition: ease-out 1s;
+      -moz-transition: ease-out 1s;
+      transition: ease-out 1s;
+      &:hover {
+        box-shadow: inset 400px 0 0 0 #ae59ff;
+      }
+    }
+    .up {
+      display: flex;
+      column-gap: 20px;
+      .left,
+      .right {
+        input {
+          width: 400px;
+          padding: 5px;
+          outline: none;
+          border-radius: 10px;
+          background-color: white;
+        }
+      }
+    }
+  }
+}

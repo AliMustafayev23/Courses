@@ -34,6 +34,26 @@ app.get("/courses", (req, res) => {
     }
   });
 });
+app.post("/courses", (req, res) => {
+  let courses = new Courses({
+    type: req.body.type,
+    name: req.body.name,
+    image: req.body.image,
+    description: req.body.description,
+    star: req.body.star,
+    rating: req.body.rating,
+    price: req.body.price,
+  });
+  courses.save();
+});
+app.delete("/courses/:id", (req, res) => {
+  let id = req.params.id;
+  Courses.findByIdAndDelete(id, (err, doc) => {
+    if (!err) {
+      res.send(doc);
+    }
+  });
+});
 app.get("/courses/:id", (req, res) => {
   let id = req.params.id;
   Courses.findById(id, (err, docs) => {

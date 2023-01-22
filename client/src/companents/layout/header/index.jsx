@@ -65,6 +65,7 @@ const Header = () => {
             </a>
           </Dropdown>
           <Link>Contact</Link>
+          <Link to="/add-course">Add Course</Link>
         </nav>
         <div className="buttonSide">
           <button className="join">Join</button>

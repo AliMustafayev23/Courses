@@ -15,7 +15,7 @@ const OurFeaturedCourses = () => {
   return (
     <div className="ourFeaturedCourse">
       <h1>Our Featured Courses</h1>
-      <Carousel cols={3} rows={1} gap={100} loop>
+      <Carousel cols={3} rows={1} gap={10} loop>
         {courses.map((e) => {
           return (
             <Carousel.Item>
