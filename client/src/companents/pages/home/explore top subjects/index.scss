@@ -1,0 +1,125 @@
+// .topic {
+//   width: 300px;
+//   height: 300px;
+//   &:hover {
+//     h2 {
+//       text-decoration: underline;
+//       position: relative;
+//       bottom: 480px;
+//       left: 90px;
+//     }
+//     .linearGradient {
+//       background-color: rgba(91, 32, 220, 0.503);
+//       border-radius: 10px;
+//       position: relative;
+//       bottom: 304px;
+//     }
+//   }
+//   img {
+//     width: 300px;
+//     height: 300px;
+//   }
+//   .linearGradient {
+//     height: 300px;
+//     width: 300px;
+//     position: relative;
+//     bottom: 304px;
+//   }
+//   h2 {
+//     position: relative;
+//     bottom: 480px;
+//     left: 90px;
+//     color: white;
+//   }
+// }
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
+  height: 120vh;
+  h1 {
+    color: #4255a4;
+  }
+  .up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    .topic {
+      width: 300px;
+      height: 300px;
+      &:hover {
+        h2 {
+          text-decoration: underline;
+          position: relative;
+          bottom: 480px;
+          left: 90px;
+        }
+        .linearGradient {
+          background-color: rgba(91, 32, 220, 0.503);
+          border-radius: 10px;
+          position: relative;
+          bottom: 304px;
+        }
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      .linearGradient {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        bottom: 304px;
+      }
+      h2 {
+        position: relative;
+        bottom: 480px;
+        left: 90px;
+        color: white;
+      }
+    }
+  }
+  .down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    .topic {
+      width: 300px;
+      height: 300px;
+      &:hover {
+        h2 {
+          text-decoration: underline;
+          position: relative;
+          bottom: 480px;
+          left: 90px;
+        }
+        .linearGradient {
+          background-color: rgba(91, 32, 220, 0.503);
+          border-radius: 10px;
+          position: relative;
+          bottom: 304px;
+        }
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      .linearGradient {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        bottom: 304px;
+      }
+      h2 {
+        position: relative;
+        bottom: 480px;
+        left: 90px;
+        color: white;
+      }
+    }
+  }
+}

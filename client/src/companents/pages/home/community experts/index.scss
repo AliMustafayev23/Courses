@@ -1,0 +1,23 @@
+.communityExperts {
+  height: 100vh;
+  display: flex;
+  row-gap: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6774ff;
+  .normalExprets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: 40px;
+    .exspertCard {
+      width: 15vw;
+      height: 40vh;
+    }
+  }
+  .carousel {
+    display: none;
+  }
+}

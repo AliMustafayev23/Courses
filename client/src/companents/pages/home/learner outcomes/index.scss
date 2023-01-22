@@ -1,0 +1,16 @@
+.learnerOutcomes {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+  .learnerOutcomesRight {
+    row-gap: 10px;
+     h1 {
+      color: #4255a4;
+    }
+    p {
+      color: #4255a4;
+    }
+  }
+}

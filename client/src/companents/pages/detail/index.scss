@@ -1,0 +1,21 @@
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  column-gap: 100px;
+  background-image: linear-gradient(to top, #6774ff, #8471ff, #a76dff, #d16eff);
+  img {
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .detailRight {
+    width: 30%;
+    img {
+      height: 20px;
+      width: 100px;
+    }
+  }
+}
