@@ -13,7 +13,7 @@ const CommunityExperts = () => {
   return (
     <div className="communityExperts">
       <h1>Community Experts</h1>
-      <div className="normalExprets">
+      {/* <div className="normalExprets">
         {experts.map((e) => {
           return (
             <div>
@@ -27,9 +27,9 @@ const CommunityExperts = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
       <div className="carousel">
-        <Carousel cols={1} rows={1} gap={100} loop>
+        <Carousel cols={4} rows={1} gap={100} loop>
           {experts.map((e) => {
             return (
               <Carousel.Item>

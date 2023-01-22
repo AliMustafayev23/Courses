@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   color: #6774ff;
-  .normalExprets {
+  .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +16,5 @@
       width: 15vw;
       height: 40vh;
     }
-  }
-  .carousel {
-    display: none;
   }
 }
